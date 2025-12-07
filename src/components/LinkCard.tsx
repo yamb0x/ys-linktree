@@ -41,6 +41,9 @@ export default function LinkCard({ link }: LinkCardProps) {
 
   // Small thumbnail variant
   if (thumbnailSize === 'small' && thumbnail) {
+    // Use object-contain for SVG icons, object-cover for photos
+    const isSvg = thumbnail.endsWith('.svg');
+
     return (
       <a
         href={url}
@@ -49,12 +52,12 @@ export default function LinkCard({ link }: LinkCardProps) {
         className={`link-card flex items-center w-full bg-surface rounded-link p-4 gap-4 ${animationClass}`}
       >
         {/* Small thumbnail */}
-        <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 relative">
+        <div className={`w-12 h-12 flex-shrink-0 relative ${isSvg ? 'p-3' : 'rounded-lg overflow-hidden'}`}>
           <Image
             src={thumbnail}
             alt={title}
             fill
-            className="object-cover"
+            className={isSvg ? 'object-contain' : 'object-cover'}
           />
         </div>
         {/* Title */}
