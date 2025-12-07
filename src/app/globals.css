@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   Font Face - Basis Grotesque
+   ============================================ */
+@font-face {
+  font-family: 'Basis Grotesque';
+  src: url('/fonts/Basis Grotesque/basis-grotesque-regular-pro.woff2') format('woff2'),
+       url('/fonts/Basis Grotesque/basis-grotesque-regular-pro.woff') format('woff'),
+       url('/fonts/Basis Grotesque/basis-grotesque-regular-pro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   CSS Custom Properties - Design Tokens
+   ============================================ */
+:root {
+  /* Colors */
+  --color-background: #121212;
+  --color-surface: #1e1e1e;
+  --color-surface-hover: #2a2a2a;
+  --color-text: #ffffff;
+  --color-text-muted: #a0a0a0;
+  --color-border: #333333;
+
+  /* Typography */
+  --font-family: 'Basis Grotesque', system-ui, -apple-system, sans-serif;
+  --font-title: 24px;
+  --font-description: 14px;
+  --font-link: 16px;
+  --font-section: 12px;
+
+  /* Spacing */
+  --spacing-container: 16px;
+  --spacing-link-gap: 12px;
+
+  /* Components */
+  --link-radius: 8px;
+  --link-padding: 16px;
+  --avatar-size: 80px;
+
+  /* Layout */
+  --max-width: 680px;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   Typography Classes
+   ============================================ */
+.text-title {
+  font-size: var(--font-title);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.text-description {
+  font-size: var(--font-description);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.text-link {
+  font-size: var(--font-link);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.text-section {
+  font-size: var(--font-section);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* ============================================
+   Link Card Animations
+   ============================================ */
+.link-card {
+  transition: all 0.2s ease-out;
+}
+
+.link-card:hover {
+  background-color: var(--color-surface-hover);
+}
+
+/* Animation: Glow */
+.link-card-glow:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Animation: Scale */
+.link-card-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Animation: Bounce */
+.link-card-bounce:hover {
+  animation: bounce 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* Animation: Shake */
+.link-card-shake:hover {
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  75% { transform: translateX(2px); }
+}
+
+/* ============================================
+   Container
+   ============================================ */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-container);
+}
+
+/* ============================================
+   Scrollbar Styling (optional, minimal)
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
