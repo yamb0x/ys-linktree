@@ -43,7 +43,7 @@ export const siteConfig: SiteConfigType = {
   sections: ["main", "Education", "Initiatives"],
 
   // Footer message
-  footerMessage: "Built using Claude Code in 18 minutes from initial prompt to working version on Vercel. There's no reason to pay for services like Linktree nowadays ;)",
+  footerMessage: "This page was built using Claude Code in 18 minutes from initial prompt to working version on Vercel. There's no reason to pay for services like Linktree nowadays ;)",
 };
 
 export type SiteConfig = typeof siteConfig;

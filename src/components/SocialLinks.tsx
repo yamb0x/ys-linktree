@@ -22,7 +22,7 @@ export default function SocialLinks() {
       )}
 
       {footerMessage && (
-        <p className="text-center text-xs text-text-muted opacity-60 max-w-sm mx-auto leading-relaxed">
+        <p className="text-center text-xs text-text-muted opacity-60 w-full leading-relaxed">
           {footerMessage}
         </p>
       )}
