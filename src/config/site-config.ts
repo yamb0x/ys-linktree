@@ -27,7 +27,7 @@ export const siteConfig: SiteConfigType = {
   hero: {
     src: "/thumbnails/plnty-hero.png",
     type: "image",
-    link: "https://yambo-studio.com/",
+    link: "https://plnty.app",
   },
 
   // Social links (footer)
