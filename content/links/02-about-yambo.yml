@@ -1,7 +1,7 @@
-title: "About Yambo (&Studio)"
-url: "https://www.yambo-studio.com/about"
+title: "Get Access to plnty.app"
+url: "https://plnty.app"
 section: "main"
-order: 2
-thumbnail: "/thumbnails/about-yambo.jpg"
+order: 1
+thumbnail: "/thumbnails/plnty-logo.png"
 thumbnailSize: "small"
 animation: "glow"

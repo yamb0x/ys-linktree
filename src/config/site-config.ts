@@ -19,13 +19,13 @@ interface SiteConfigType {
 
 export const siteConfig: SiteConfigType = {
   // Header
-  title: "Yambo Studio",
-  description: "We create bespoke visuals for brands looking to distinguish themselves.",
+  title: "Yambo",
+  description: "Co-Founder of plnty.app and founder of Yambo Studio: We create bespoke visuals for brands looking to distinguish themselves.",
   avatar: "/icons/studio-logo.png",
 
   // Hero banner
   hero: {
-    src: "/thumbnails/yambo-studio-hero.png",
+    src: "/thumbnails/plnty-hero.png",
     type: "image",
     link: "https://yambo-studio.com/",
   },
@@ -40,7 +40,7 @@ export const siteConfig: SiteConfigType = {
   // Section display order
   // Links with section "main" appear first (no header)
   // Other sections appear in this order with headers
-  sections: ["main", "Education", "Initiatives"],
+  sections: ["main", "Education", "Archive", "Yambo Studio"],
 
   // Footer message
   footerMessage: "This page was built using Claude Code in 18 minutes from initial prompt to working version on Vercel. There's no reason to pay for services like Linktree nowadays ;)",

@@ -1,7 +1,7 @@
-title: "ComfyUI Workshop I"
+title: "ComfyUI Workshop 2024"
 url: "https://yamb0x.gumroad.com/l/bwjhy"
-section: "Education"
-order: 1
+section: "Archive"
+order: 2
 thumbnail: "/thumbnails/comfyui-workshop.jpg"
-thumbnailSize: "large"
-animation: "scale"
+thumbnailSize: "small"
+animation: "glow"
